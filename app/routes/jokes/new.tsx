@@ -39,7 +39,7 @@ export const action: ActionFunction = async ({
     name: validateJokeName(name),
     content: validateJokeContent(content)
   }
-  // check if fielError are truthy 
+  // check if fieldErrors are truthy 
   if (Object.keys(fieldErrors).some(Boolean)) {
     return {fieldErrors, fields: {name, content}}
   }
